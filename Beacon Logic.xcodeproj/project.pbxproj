@@ -13,6 +13,11 @@
 		10BEFFB41E7B086700AAA30D /* Beacon_Logic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10BEFFB21E7B086700AAA30D /* Beacon_Logic.xcdatamodeld */; };
 		10BEFFB61E7B086700AAA30D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BEFFB51E7B086700AAA30D /* Assets.xcassets */; };
 		10BEFFB91E7B086700AAA30D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BEFFB71E7B086700AAA30D /* LaunchScreen.storyboard */; };
+		10BEFFC11E7B090D00AAA30D /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BEFFC01E7B090D00AAA30D /* EstimoteSDK.framework */; };
+		10BEFFC41E7B094200AAA30D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BEFFC31E7B094200AAA30D /* SystemConfiguration.framework */; };
+		10BEFFC61E7B095100AAA30D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BEFFC51E7B095100AAA30D /* CoreGraphics.framework */; };
+		10BEFFC81E7B095D00AAA30D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BEFFC71E7B095D00AAA30D /* UIKit.framework */; };
+		10BEFFCA1E7B096700AAA30D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BEFFC91E7B096700AAA30D /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,12 @@
 		10BEFFB51E7B086700AAA30D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10BEFFB81E7B086700AAA30D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10BEFFBA1E7B086700AAA30D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10BEFFC01E7B090D00AAA30D /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
+		10BEFFC31E7B094200AAA30D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		10BEFFC51E7B095100AAA30D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		10BEFFC71E7B095D00AAA30D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		10BEFFC91E7B096700AAA30D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		10BEFFCB1E7B099500AAA30D /* ObjCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BEFFC11E7B090D00AAA30D /* EstimoteSDK.framework in Frameworks */,
+				10BEFFC41E7B094200AAA30D /* SystemConfiguration.framework in Frameworks */,
+				10BEFFC61E7B095100AAA30D /* CoreGraphics.framework in Frameworks */,
+				10BEFFC81E7B095D00AAA30D /* UIKit.framework in Frameworks */,
+				10BEFFCA1E7B096700AAA30D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +58,8 @@
 			children = (
 				10BEFFAA1E7B086700AAA30D /* Beacon Logic */,
 				10BEFFA91E7B086700AAA30D /* Products */,
+				10BEFFC01E7B090D00AAA30D /* EstimoteSDK.framework */,
+				10BEFFC21E7B094200AAA30D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +81,20 @@
 				10BEFFB71E7B086700AAA30D /* LaunchScreen.storyboard */,
 				10BEFFBA1E7B086700AAA30D /* Info.plist */,
 				10BEFFB21E7B086700AAA30D /* Beacon_Logic.xcdatamodeld */,
+				10BEFFCB1E7B099500AAA30D /* ObjCBridge.h */,
 			);
 			path = "Beacon Logic";
+			sourceTree = "<group>";
+		};
+		10BEFFC21E7B094200AAA30D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10BEFFC91E7B096700AAA30D /* Foundation.framework */,
+				10BEFFC71E7B095D00AAA30D /* UIKit.framework */,
+				10BEFFC51E7B095100AAA30D /* CoreGraphics.framework */,
+				10BEFFC31E7B094200AAA30D /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +129,7 @@
 				TargetAttributes = {
 					10BEFFA71E7B086700AAA30D = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 49K6QA69Y7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -262,10 +293,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49K6QA69Y7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Beacon Logic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "frankie.Beacon-Logic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,10 +311,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49K6QA69Y7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Beacon Logic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "frankie.Beacon-Logic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
