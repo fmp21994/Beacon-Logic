@@ -18,10 +18,6 @@
 		10BEFFC61E7B095100AAA30D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BEFFC51E7B095100AAA30D /* CoreGraphics.framework */; };
 		10BEFFC81E7B095D00AAA30D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BEFFC71E7B095D00AAA30D /* UIKit.framework */; };
 		10BEFFCA1E7B096700AAA30D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BEFFC91E7B096700AAA30D /* Foundation.framework */; };
-		4CF2718D1EB039C200821FE4 /* Couch.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4CF271891EB039C200821FE4 /* Couch.m4a */; };
-		4CF2718E1EB039C200821FE4 /* FRIDGE.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2718A1EB039C200821FE4 /* FRIDGE.m4a */; };
-		4CF2718F1EB039C200821FE4 /* Hi I'm Life Jewel.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2718B1EB039C200821FE4 /* Hi I'm Life Jewel.m4a */; };
-		4CF271901EB039C200821FE4 /* Television.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2718C1EB039C200821FE4 /* Television.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +35,6 @@
 		10BEFFC71E7B095D00AAA30D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		10BEFFC91E7B096700AAA30D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10BEFFCB1E7B099500AAA30D /* ObjCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
-		4CF271891EB039C200821FE4 /* Couch.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Couch.m4a; sourceTree = "<group>"; };
-		4CF2718A1EB039C200821FE4 /* FRIDGE.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = FRIDGE.m4a; sourceTree = "<group>"; };
-		4CF2718B1EB039C200821FE4 /* Hi I'm Life Jewel.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hi I'm Life Jewel.m4a"; sourceTree = "<group>"; };
-		4CF2718C1EB039C200821FE4 /* Television.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Television.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +74,7 @@
 		10BEFFAA1E7B086700AAA30D /* Beacon Logic */ = {
 			isa = PBXGroup;
 			children = (
+				4C7E6A851EB1514500D57B63 /* Music */,
 				10BEFFAB1E7B086700AAA30D /* AppDelegate.swift */,
 				10BEFFAD1E7B086700AAA30D /* ViewController.swift */,
 				10BEFFAF1E7B086700AAA30D /* Main.storyboard */,
@@ -90,10 +83,6 @@
 				10BEFFBA1E7B086700AAA30D /* Info.plist */,
 				10BEFFB21E7B086700AAA30D /* Beacon_Logic.xcdatamodeld */,
 				10BEFFCB1E7B099500AAA30D /* ObjCBridge.h */,
-				4CF271891EB039C200821FE4 /* Couch.m4a */,
-				4CF2718A1EB039C200821FE4 /* FRIDGE.m4a */,
-				4CF2718B1EB039C200821FE4 /* Hi I'm Life Jewel.m4a */,
-				4CF2718C1EB039C200821FE4 /* Television.m4a */,
 			);
 			path = "Beacon Logic";
 			sourceTree = "<group>";
@@ -107,6 +96,13 @@
 				10BEFFC31E7B094200AAA30D /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C7E6A851EB1514500D57B63 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,11 +167,7 @@
 			files = (
 				10BEFFB91E7B086700AAA30D /* LaunchScreen.storyboard in Resources */,
 				10BEFFB61E7B086700AAA30D /* Assets.xcassets in Resources */,
-				4CF271901EB039C200821FE4 /* Television.m4a in Resources */,
-				4CF2718F1EB039C200821FE4 /* Hi I'm Life Jewel.m4a in Resources */,
 				10BEFFB11E7B086700AAA30D /* Main.storyboard in Resources */,
-				4CF2718D1EB039C200821FE4 /* Couch.m4a in Resources */,
-				4CF2718E1EB039C200821FE4 /* FRIDGE.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
