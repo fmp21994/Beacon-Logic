@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController, ESTBeaconManagerDelegate  {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    var audioPlayer = AVAudioPlayer()
     
     let beaconManager = ESTBeaconManager()
     let beaconRegion = CLBeaconRegion(
@@ -34,7 +36,8 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate  {
     
     func beaconManager(_ manager: Any, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
         if let closest = beacons.first {
-            let minor = (closest.minor) as Int
+            
+            let minor = (closest.minor) as! Int
             
             if (closest.proximity.rawValue == 1) {
                 self.activityIndicator?.stopAnimating()
@@ -43,21 +46,23 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate  {
                 case 42553:
                     
                     self.view.backgroundColor = UIColor.purple
-                    self.label.text = "This is the television!"
+                    self.label.text = "This is a water bottle!"
                     self.image.isHidden = false
                     print("Purple");
+                    var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource)
+                    
                     
                 case 10335:
                     
                     self.view.backgroundColor = UIColor.green
-                    self.label.text = "This is the couch!"
+                    self.label.text = "This is a chair!"
                     self.image.isHidden = false
                     print("Mint");
                     
                 case 53328:
                     
                     self.view.backgroundColor = UIColor.blue
-                    self.label.text = "This is the refrigerator!"
+                    self.label.text = "This is a purse!"
                     self.image.isHidden = false
                     print("ice");
                     
