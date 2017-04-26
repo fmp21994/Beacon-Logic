@@ -18,10 +18,10 @@
 		10BEFFC61E7B095100AAA30D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BEFFC51E7B095100AAA30D /* CoreGraphics.framework */; };
 		10BEFFC81E7B095D00AAA30D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BEFFC71E7B095D00AAA30D /* UIKit.framework */; };
 		10BEFFCA1E7B096700AAA30D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BEFFC91E7B096700AAA30D /* Foundation.framework */; };
-		4C7E6A8A1EB151CA00D57B63 /* Couch.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C7E6A861EB151CA00D57B63 /* Couch.m4a */; };
-		4C7E6A8B1EB151CA00D57B63 /* FRIDGE.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C7E6A871EB151CA00D57B63 /* FRIDGE.m4a */; };
-		4C7E6A8C1EB151CA00D57B63 /* Hi I'm Life Jewel.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C7E6A881EB151CA00D57B63 /* Hi I'm Life Jewel.m4a */; };
-		4C7E6A8D1EB151CA00D57B63 /* Television.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C7E6A891EB151CA00D57B63 /* Television.m4a */; };
+		4C7E6A921EB1528700D57B63 /* Couch.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C7E6A8E1EB1528700D57B63 /* Couch.m4a */; };
+		4C7E6A931EB1528700D57B63 /* FRIDGE.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C7E6A8F1EB1528700D57B63 /* FRIDGE.m4a */; };
+		4C7E6A941EB1528700D57B63 /* Hi I'm Life Jewel.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C7E6A901EB1528700D57B63 /* Hi I'm Life Jewel.m4a */; };
+		4C7E6A951EB1528700D57B63 /* Television.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C7E6A911EB1528700D57B63 /* Television.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +39,10 @@
 		10BEFFC71E7B095D00AAA30D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		10BEFFC91E7B096700AAA30D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10BEFFCB1E7B099500AAA30D /* ObjCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
-		4C7E6A861EB151CA00D57B63 /* Couch.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Couch.m4a; sourceTree = "<group>"; };
-		4C7E6A871EB151CA00D57B63 /* FRIDGE.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = FRIDGE.m4a; sourceTree = "<group>"; };
-		4C7E6A881EB151CA00D57B63 /* Hi I'm Life Jewel.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hi I'm Life Jewel.m4a"; sourceTree = "<group>"; };
-		4C7E6A891EB151CA00D57B63 /* Television.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Television.m4a; sourceTree = "<group>"; };
+		4C7E6A8E1EB1528700D57B63 /* Couch.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Couch.m4a; sourceTree = "<group>"; };
+		4C7E6A8F1EB1528700D57B63 /* FRIDGE.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = FRIDGE.m4a; sourceTree = "<group>"; };
+		4C7E6A901EB1528700D57B63 /* Hi I'm Life Jewel.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hi I'm Life Jewel.m4a"; sourceTree = "<group>"; };
+		4C7E6A911EB1528700D57B63 /* Television.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Television.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +109,10 @@
 		4C7E6A851EB1514500D57B63 /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				4C7E6A861EB151CA00D57B63 /* Couch.m4a */,
-				4C7E6A871EB151CA00D57B63 /* FRIDGE.m4a */,
-				4C7E6A881EB151CA00D57B63 /* Hi I'm Life Jewel.m4a */,
-				4C7E6A891EB151CA00D57B63 /* Television.m4a */,
+				4C7E6A8E1EB1528700D57B63 /* Couch.m4a */,
+				4C7E6A8F1EB1528700D57B63 /* FRIDGE.m4a */,
+				4C7E6A901EB1528700D57B63 /* Hi I'm Life Jewel.m4a */,
+				4C7E6A911EB1528700D57B63 /* Television.m4a */,
 			);
 			name = Music;
 			sourceTree = "<group>";
@@ -179,11 +179,11 @@
 			files = (
 				10BEFFB91E7B086700AAA30D /* LaunchScreen.storyboard in Resources */,
 				10BEFFB61E7B086700AAA30D /* Assets.xcassets in Resources */,
-				4C7E6A8D1EB151CA00D57B63 /* Television.m4a in Resources */,
-				4C7E6A8C1EB151CA00D57B63 /* Hi I'm Life Jewel.m4a in Resources */,
+				4C7E6A951EB1528700D57B63 /* Television.m4a in Resources */,
+				4C7E6A941EB1528700D57B63 /* Hi I'm Life Jewel.m4a in Resources */,
 				10BEFFB11E7B086700AAA30D /* Main.storyboard in Resources */,
-				4C7E6A8A1EB151CA00D57B63 /* Couch.m4a in Resources */,
-				4C7E6A8B1EB151CA00D57B63 /* FRIDGE.m4a in Resources */,
+				4C7E6A921EB1528700D57B63 /* Couch.m4a in Resources */,
+				4C7E6A931EB1528700D57B63 /* FRIDGE.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
