@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  Estimote Tutorial
+//  Beacon Logic
 //
-//  Created by Frankie Palmisano on 3/15/17.
-//  Copyright © 2017 Frankie Palmisano. All rights reserved.
+//  Created by Frank Palmisano on 3/15/17.
+//  Copyright © 2017 Frank Palmisano. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate  {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var audioPlayer = AVAudioPlayer()
     var go = true
-    
+    var once = true
     let beaconManager = ESTBeaconManager()
     let beaconRegion = CLBeaconRegion(
         proximityUUID: UUID(uuidString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,
@@ -25,8 +25,8 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate  {
         super.viewDidLoad()
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Hi I'm Life Jewel", ofType: "m4a")!))
-            audioPlayer.prepareToPlay()
-            audioPlayer.play()
+//            audioPlayer.prepareToPlay()
+//            audioPlayer.play()
         } catch {
             print(error)
         }
@@ -62,16 +62,20 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate  {
                         print("Purple")
                         playSoundEffect(minor: minor)
                         go = false
-                        pause(time: 4500)
+                        pause()
                         
                     case 10335:
                         self.view.backgroundColor = UIColor.green
                         self.label.text = "This is a Couch!"
                         self.image.isHidden = false
                         print("Mint")
-                        playSoundEffect(minor: minor)
-                        go = false
-                        pause(time: 4500)
+                        if once == true {
+                            playSoundEffect(minor: minor)
+                            go = false
+                            once = false
+                            pause()
+                        }
+                       
                         
                     case 53328:
                         self.view.backgroundColor = UIColor.blue
@@ -80,7 +84,7 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate  {
                         print("ice");
                         playSoundEffect(minor: minor)
                         go = false
-                        pause(time: 4500)
+                        pause()
                         
                     default:
                         self.view.backgroundColor = UIColor.lightGray
@@ -130,8 +134,8 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate  {
         }
     }
     
-    func pause(time: Int) {
-        let deadlineTime = DispatchTime.now() + .milliseconds(time)
+    func pause() {
+        let deadlineTime = DispatchTime.now() + .seconds(6)
         DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
             self.go = true
         }
